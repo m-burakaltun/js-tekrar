@@ -35,3 +35,10 @@ console.log(randomNumber3);
 
 const randomNumber4 = Math.floor (Math.random() * (30-10+1 )) +10; // 10 ile 30 arasında rastgele bir tamsayı üretir
 console.log("randomNumber4: "+randomNumber4);
+
+
+// kesirli sayılarda işlem yaparken toFixed() kullanılarak kesirli sayılardaki hesap hatasından kurtulabiliriz
+console.log (0.2 + 0.1);  // 0.3 buradaki sonuç 0.3 e eşit değildir çözümü için;
+console.log((0.2 + 0.1).toFixed(1));  // 0.3 toFixed'ın içine verdiğimiz değer kadar basamak sayısını gösterir 
+console.log((0.2 + 0.1).toFixed(2));  // 0.30
+console.log((0.2 + 0.1).toFixed(3));  // 0.300
